@@ -21,11 +21,11 @@ $tab_list = array(
 	'power-tab' => array('view' => 'client/power_tab', 'i18n' => 'client.tab.power'),
 	'printer-tab' => array('view' => 'client/printer_tab', 'i18n' => 'client.tab.printers', 'badge' => 'printer-cnt'),
 	'profile-tab' => array('view' => 'client/profile_tab', 'i18n' => 'client.tab.profiles'),
-	'adoberum-tab' => array('view' => 'client/adoberum_tab', 'i18n' => 'client.tab.adoberum'),
+	
 		);
 
 // Add custom tabs
-$tab_list = array_merge($tab_list, conf('client_tabs', array()));
+$tab_list = array_merge($tab_list, conf('client_tabs', array('adoberum-tab' => array('view' => 'client/adoberum_tab', 'i18n' => 'client.tab.adoberum'),)));
 
 ?>
 
